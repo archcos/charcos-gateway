@@ -26,7 +26,8 @@ $app = new Laravel\Lumen\Application(
 $app->withFacades();
 
 $app->withEloquent();
-
+ 
+$app->configure('database');
 
 $app->configure('services');
 $app->configure('auth');
